@@ -3,135 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Daniel Medeiros</title>
+    <title>Portfólio - Daniel Medeiros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Configurações gerais da página */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5; /* Um cinza bem clarinho e moderno */
             color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        header {
+
+        /* O cabeçalho azul no topo */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
             text-align: center;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        header h1 {
-            color: #2c3e50;
+        .hero h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            letter-spacing: 1px;
         }
-        header p {
-            margin: 5px 0;
-            font-size: 1.1em;
-            color: #555;
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .section-content {
-            margin-bottom: 20px;
-        }
-        .job-title {
-            font-weight: bold;
+        .hero p {
             font-size: 1.2em;
-            color: #2c3e50;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* A caixa principal que centraliza tudo */
+        .container {
+            max-width: 900px;
+            margin: -30px auto 40px auto; /* O -30px faz o conteúdo subir e sobrepor o azul */
+            padding: 0 20px;
+        }
+
+        /* Títulos de cada seção */
+        h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-top: 40px;
+            border-left: 5px solid #2a5298;
+            padding-left: 10px;
+        }
+
+        /* O estilo dos "Cards" (Cartões brancos) */
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepara o efeito de movimento */
+        }
+
+        /* O efeito Hover: o que acontece quando passa o mouse por cima do cartão */
+        .card:hover {
+            transform: translateY(-5px); /* Faz o cartão subir 5 pixels */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Aumenta a sombra */
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-size: 1.3em;
+            color: #222;
+            margin: 0 0 5px 0;
         }
         .job-company {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 10px;
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin-bottom: 15px;
         }
-        ul {
-            padding-left: 20px;
+
+        /* Estilo das pílulas de habilidades */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-        li {
-            margin-bottom: 8px;
+        .skill-tag {
+            background-color: #e1e8f0;
+            color: #1e3c72;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
         }
+
         footer {
             text-align: center;
-            margin-top: 40px;
+            padding: 30px;
+            color: #666;
             font-size: 0.9em;
-            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Daniel Medeiros Magalhães</h1>
-            <p>Itapevi, SP | (11) 98458-9660 | danielmmedeiros24@gmail.com</p>
-            <p><strong>Objetivo:</strong> Assistente Administrativo</p>
-        </header>
-
-        <section>
-            <h2>Sobre Mim</h2>
-            <p class="section-content">Sou técnico em Administração formado pela ETEC, com experiência prática em rotinas operacionais e de estoque pelo Mercado Livre. Durante minha formação, atuei no planejamento financeiro e na estruturação de uma empresa simulada, desenvolvendo forte habilidade com Excel, Canva e uso de Inteligências Artificiais para otimizar tarefas. Busco uma oportunidade como Assistente Administrativo para aplicar minha organização e facilidade com tecnologia na rotina da empresa.</p>
-        </section>
-
-        <section>
-            <h2>Formação Acadêmica</h2>
-            <div class="section-content">
-                <p class="job-title">Ensino Médio integrado ao Técnico em Administração</p>
-                <p class="job-company">ETEC José Miguel Soares (ETEC de Itapevi) | 2023 – 2025</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Experiência Profissional e Projetos</h2>
-            
-            <div class="section-content">
-                <p class="job-title">Auxiliar de Escritório (Atuação em Logística)</p>
-                <p class="job-company">Mercado Livre</p>
-                <ul>
-                    <li>Suporte operacional contínuo na área de estoque e logística da unidade.</li>
-                    <li>Auxílio na organização, separação e movimentação física de mercadorias.</li>
-                </ul>
-            </div>
-
-            <div class="section-content">
-                <p class="job-title">Projeto de Conclusão de Curso (TCC) - Planejamento de Empresa</p>
-                <p class="job-company">ETEC José Miguel Soares</p>
-                <ul>
-                    <li>Planejamento estrutural de uma empresa simulada completa em equipe.</li>
-                    <li>Elaboração de planejamento financeiro (cálculos de lucros e despesas).</li>
-                    <li>Criação e organização de planilhas de controle utilizando o Microsoft Excel.</li>
-                    <li>Desenvolvimento da estrutura visual e criação do site do projeto.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Habilidades e Idiomas</h2>
-            <div class="section-content">
-                <ul>
-                    <li><strong>Ferramentas de Escritório:</strong> Pacote Office (Excel, Word), Google Planilhas e Documentos.</li>
-                    <li><strong>Design e Tecnologia:</strong> Uso avançado do Canva, desenvolvimento básico de sites e aplicação de Inteligência Artificial para otimização de tempo.</li>
-                    <li><strong>Operacional:</strong> Rotinas de logística, organização de estoque e visão estratégica de administração.</li>
-                    <li><strong>Idiomas:</strong> Inglês Intermediário/Avançado (leitura, escrita e compreensão).</li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <p>Desenvolvido por Daniel Medeiros</p>
-        </footer>
+    <div class="hero">
+        <h1>Daniel Medeiros</h1>
+        <p>Assistente Administrativo | Organização & Tecnologia</p>
     </div>
+
+    <div class="container">
+        <div class="card">
+            <p>Sou técnico em Administração formado pela ETEC, com experiência prática em rotinas operacionais e de estoque. Durante minha formação, atuei no planejamento financeiro e na estruturação de uma empresa simulada, desenvolvendo forte habilidade com ferramentas digitais e Inteligência Artificial para otimizar tarefas. Busco uma oportunidade para aplicar minha organização e facilidade com tecnologia na rotina administrativa da sua empresa.</p>
+        </div>
+
+        <h2>Experiência e Projetos</h2>
+        
+        <div class="card">
+            <h3 class="job-title">Auxiliar de Escritório (Atuação em Logística)</h3>
+            <p class="job-company">Mercado Livre</p>
+            <ul>
+                <li>Suporte operacional contínuo na área de estoque e logística da unidade.</li>
+                <li>Auxílio diário na organização, separação e movimentação física de mercadorias.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="job-title">Projeto Prático - Estruturação de Empresa Simulada</h3>
+            <p class="job-company">TCC - ETEC José Miguel Soares</p>
+            <ul>
+                <li>Planejamento estrutural de um negócio completo em equipe.</li>
+                <li>Elaboração de planejamento financeiro, incluindo cálculos de lucros e controle de despesas.</li>
+                <li>Criação de planilhas de controle avançadas utilizando o Microsoft Excel.</li>
+                <li>Desenvolvimento da identidade visual e criação do site do projeto.</li>
+            </ul>
+        </div>
+
+        <h2>Habilidades Práticas</h2>
+        <div class="card">
+            <div class="skills-container">
+                <span class="skill-tag">Pacote Office</span>
+                <span class="skill-tag">Excel Avançado</span>
+                <span class="skill-tag">Google Planilhas</span>
+                <span class="skill-tag">Canva (Design)</span>
+                <span class="skill-tag">Inteligência Artificial (Prompts)</span>
+                <span class="skill-tag">Inglês Intermediário/Avançado</span>
+                <span class="skill-tag">Rotinas de Logística</span>
+                <span class="skill-tag">Planejamento Financeiro</span>
+            </div>
+        </div>
+
+        <h2>Contato e Formação</h2>
+        <div class="card">
+            <p><strong>E-mail:</strong> danielmmedeiros24@gmail.com</p>
+            <p><strong>Telefone:</strong> (11) 98458-9660</p>
+            <p><strong>Localização:</strong> Itapevi, SP</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+            <p><strong>Formação:</strong> Ensino Médio Técnico em Administração - ETEC (2023–2025)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Daniel Medeiros | Portfólio Profissional</p>
+    </footer>
 
 </body>
 </html>
